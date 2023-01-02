@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4c727a;
+    padding: 1rem;
+    font-family: sans-serif;
+    color: white;
+}
+
+.linkBtn{
+    text-decoration: none;
+    border: 1px solid red;
+}
+.navbarItems{
+    display: flex;
+}
+.navbarLink{
+    padding-right: 0.5rem;
+}
+.navbarToggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbarItems, .navbar {
+      flex-direction: column;
+
+    }
+    .navbarItems{
+        display: none;
+    }
+    .navbarToggle {
+        display: initial;
+        cursor: pointer;
+        align-self: flex-end;
+        position: absolute;
+      }
+    .navbarToggleShow{
+        display: flex;
+    }
+  }
